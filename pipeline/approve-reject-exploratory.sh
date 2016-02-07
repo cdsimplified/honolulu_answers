@@ -5,7 +5,7 @@ export SHA=`ruby -e 'require "opendelivery"' -e "puts OpenDelivery::Domain.new('
 ruby pipeline/bin/emails/exploratory_check_email.rb \
 --region "us-east-1" \
 --pipelineid $pipeline_instance_id \
---recipient "`cat /etc/admin_email`" \
+--recipient "nayeem@cdsimplified.com" \
 --sender no-reply@demo.elasticoperations.com \
 --jenkinsurl samplepipeline.$domain \
 --application "Honolulu" \
