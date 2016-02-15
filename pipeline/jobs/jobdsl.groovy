@@ -163,7 +163,7 @@ job {
     shell("pipeline/self-service-create.sh")
   }
   wrappers {
-    rvm("1.9.3")
+    rvm("2.0.0")
   }
   publishers {
     extendedEmail("\$email", "Your self service environment is ready.", """\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS:
