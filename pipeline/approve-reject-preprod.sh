@@ -3,7 +3,7 @@
 export SHA=`ruby -e 'require "opendelivery"' -e "puts OpenDelivery::Domain.new('$region').get_property '$sdb_domain','$pipeline_instance_id', 'SHA'"`
 
 ruby pipeline/bin/emails/preprod_check_email.rb \
---region "us-east-1" \
+--region "us-west-2" \
 --pipelineid $pipeline_instance_id \
 --recipient "nayeem@cdsimplified.com" \
 --sender nayeem@cdsimplified.com \
