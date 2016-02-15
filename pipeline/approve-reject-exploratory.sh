@@ -6,7 +6,7 @@ ruby pipeline/bin/emails/exploratory_check_email.rb \
 --region "us-west-2" \
 --pipelineid $pipeline_instance_id \
 --recipient "nayeem@cdsimplified.com" \
---sender no-reply@demo.elasticoperations.com \
+--sender nayeem@cdsimplified.com \
 --jenkinsurl samplepipeline.$domain \
 --application "Honolulu" \
 --gitsha $SHA
