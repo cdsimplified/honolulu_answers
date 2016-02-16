@@ -191,6 +191,6 @@ job {
     shell("pipeline/self-service-delete.sh")
   }
   wrappers {
-    rvm("1.9.3")
+    rvm("2.0.0")
   }
 }
