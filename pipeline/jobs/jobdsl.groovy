@@ -33,7 +33,7 @@ def pipelines =  [
     "commit":["trigger", "commit"],
     "acceptance": ["create-environment-acceptance", "run-infrastructure-tests", "terminate-environment-acceptance"],
     "exploratory" : ["approve-reject-exploratory"],
-    "capacity" : ["launch-environment-capacity", "performance-testing", "load-testing","chaos-testing", "penetration-testing"],
+    "capacity" : ["launch-environment-capacity", "performance-testing", "load-testing","stress-testing", "penetration-testing"],
     "production" : ["approve-reject-prod", "launch-prod-environment", "blue-green-deployment"]
   ]
 ]
