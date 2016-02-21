@@ -30,8 +30,8 @@ def create_view(pipeline, triggerjob) {
 
 def pipelines =  [
   "Continuous Delivery Pipeline":[
-    "commit":["trigger", "commit"],
-    "acceptance": ["create-environment-acceptance", "run-infrastructure-tests", "run-integration-tests", "run-static-security-tests", "run-code-quality-analysis", "terminate-environment-acceptance"],
+    "commit":["trigger", "commit", "run-static-security-tests", "run-code-quality-analysis"],
+    "acceptance": ["create-environment-acceptance", "run-infrastructure-tests", "run-integration-tests", "terminate-environment-acceptance"],
     "exploratory" : ["approve-reject-exploratory"],
     "capacity" : ["launch-environment-capacity", "performance-testing", "load-testing", "stress-testing", "penetration-testing"],
     "production" : ["approve-reject-prod", "launch-prod-environment", "blue-green-deployment"]
