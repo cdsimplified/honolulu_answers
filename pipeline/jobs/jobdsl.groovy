@@ -87,7 +87,7 @@ pipelines.each { pipeline, stages ->
         rvm("2.0.0")
       }
       publishers {
-        extendedEmail("nayeem@cdsimplified.com", "\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS!", """\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS:
+        extendedEmail("nextgenops@cdsimplified.com", "\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS!", """\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS:
 
         Check console output at \$BUILD_URL to view the results.""") {
           trigger("Failure")

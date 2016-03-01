@@ -7,7 +7,7 @@ wget https://raw.githubusercontent.com/cdsimplified/honolulu_jenkins_cookbooks/m
 # Create Honolulu Jenkins stack in VPC
 aws cloudformation create-stack --stack-name $stack_name --template-body "`cat jenkins.template`" --region ${region}  --disable-rollback --capabilities="CAPABILITY_IAM" --parameters \
 --parameters ParameterKey=domain,ParameterValue="${domain}" \
-  ParameterKey=adminEmailAddress,ParameterValue="nayeem@cdsimplified.com" \
+  ParameterKey=adminEmailAddress,ParameterValue="nextgenops@cdsimplified.com" \
   ParameterKey=vpc,ParameterValue=$vpc \
   ParameterKey=publicSubnet,ParameterValue=$publicSubnet \
   ParameterKey=privateSubnetA,ParameterValue=$privateSubnetA \
